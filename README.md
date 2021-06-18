@@ -9,7 +9,7 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | [W](#w-instructions) | Waypoint instruction such as set or modify waypoint |
 | [D](#d-instructions) | ... |
 | [U](#u-instructions) | Custom user defined instructions |
-| [\*](#-checksum) | Checksum. Used to check for communications errors. |
+| [\*](#checksum) | Checksum. Used to check for communications errors. |
 | Foo | Foo |
 
 
@@ -61,4 +61,4 @@ W1,43.627,22.891,6;
 ## U Instrusctions
 
 
-## * Checksum
+## Checksum
