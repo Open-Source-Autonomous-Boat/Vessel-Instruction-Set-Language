@@ -1,32 +1,41 @@
 # Vessel Instruction Set Language (VIS)
 A custom Gcode like language for storing and transmitting instructions for the vessel's mission
 
-## Command Sets
+## Instruction Sets
 
 | Letter  | Meaning |
-| ------- | ------- |
-| C | Direct vessel command such as return to home or change power mode |
-| W | Waypoint command such as set or modify waypoint |
-| D | Waypoint command such as set or modify waypoint |
-| * | Checksum. Used to check for communications errors. |
+| :-----: | ------- |
+| [C](#c-instructions) | Direct vessel instruction such as return to home or change power mode |
+| [W](#w-instructions) | Waypoint instruction such as set or modify waypoint |
+| [D](#d-instructions) | ... |
+| [U](#u-instructions) | Custom user defined instructions |
+| [\*](#*-checksum) | Checksum. Used to check for communications errors. |
 | Foo | Foo |
 
 
-## List Of Commands
+## List Of Instructions
 
-| Command | Parameters |
-| ------- | ---------- |
-| W1 | Set waypoint |
-| W2 | Modify waypoint |
+| Instruction | Action/Meaning |
+| :-----: | ---------- |
+| **C Instructions** |  |
+| **W Instructions** |  |
+| [W1](#w1) | Set waypoint |
+| [W2](#w2) | Modify waypoint |
+| **D Instructions** |  |
+| **U Instructions** |  |
+| **Other Instructions** |  |
 | * | Checksum |
 | Foo | Foo |
 
 
-# Commands
+# Instructions
 
-## C Commands
 
-## W Commands
+## C Instructions
+
+
+## W Instructions
+
 
 ### W1
 
@@ -45,4 +54,11 @@ W1,43.627,22.891,6;
 ### Usage
 W1,43.627,22.891,6;
 
-## D Commands
+
+## D Instrusctions
+
+
+## U Instrusctions
+
+
+## * Checksum
