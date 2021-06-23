@@ -37,11 +37,11 @@ A custom Gcode like language for storing and transmitting instructions for the v
 ### C1
 Set navigation mode
 
-### Parameters
+#### Parameters:
 [Mode Number]
 
 
-### Usage
+#### Usage:
 W1,2;
 
 
@@ -52,21 +52,22 @@ W1,2;
 
 Set waypoint
 
-### Parameters
+#### Parameters:
 [Lat],[Long],(Waypoint Number \*Apend to end of sequence)
 
-### Usage
+#### Usage:
 W1,43.627,22.891,6;
 
+---
 
 ### W2
 
 Modify waypoint
 
-### Parameters
+#### Parameters:
 [Lat],[Long],(Waypoint Number)
 
-### Usage
+#### Usage:
 W1,43.627,22.891,6;
 
 
