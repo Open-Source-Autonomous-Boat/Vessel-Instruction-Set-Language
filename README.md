@@ -18,6 +18,7 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | Instruction | Action/Meaning |
 | :-----: | ---------- |
 | **C Instructions** |  |
+| [C1](#c1) | Set navigation mode |
 | **W Instructions** |  |
 | [W1](#w1) | Set waypoint |
 | [W2](#w2) | Modify waypoint |
@@ -33,11 +34,23 @@ A custom Gcode like language for storing and transmitting instructions for the v
 
 ## C Instructions
 
+### C1
+Set navigation mode
+
+### Parameters
+[Mode Number]
+
+
+### Usage
+W1,2;
+
 
 ## W Instructions
 
 
 ### W1
+
+Set waypoint
 
 ### Parameters
 [Lat],[Long],(Waypoint Number \*Apend to end of sequence)
@@ -47,6 +60,8 @@ W1,43.627,22.891,6;
 
 
 ### W2
+
+Modify waypoint
 
 ### Parameters
 [Lat],[Long],(Waypoint Number)
