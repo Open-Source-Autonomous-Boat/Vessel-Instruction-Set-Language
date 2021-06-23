@@ -1,7 +1,7 @@
 # Vessel Instruction Set Language (VIS)
 A custom Gcode like language for storing and transmitting instructions for the vessel's mission
 
-## Instruction Sets
+## Instruction Groups
 
 | Letter  | Meaning |
 | :-----: | ------- |
