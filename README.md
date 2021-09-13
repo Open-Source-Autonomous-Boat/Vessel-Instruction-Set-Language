@@ -16,7 +16,6 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | [W](#w-instructions) | Waypoint instruction such as set or modify waypoint |
 | [D](#d-instructions) | Data instructions |
 | [U](#u-instructions) | Custom user defined instructions |
-| [\*](#checksum) | Checksum. Used to check for communications errors. |
 | Foo | Foo |
 
 
@@ -34,7 +33,6 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | **D Instructions** |  |
 | **U Instructions** |  |
 | **Other Instructions** |  |
-| [\*](#checksum)| Checksum |
 | Foo | Foo |
 
 
@@ -102,9 +100,3 @@ W1,43.627,22.891,6;
 
 ## U Instrusctions
 U instructions are reserved for users to define as custom instructions
-
-
-## Checksum
-Used to validate the integrity of the message or file
-#### Usage:
-\*1jd85nsh5kdnmaj4w32js9j4n3d843ja;
