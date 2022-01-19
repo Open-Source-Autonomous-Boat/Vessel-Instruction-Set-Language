@@ -58,8 +58,9 @@ Set waypoint
 (Waypoint Number \*Append to end of sequence),[Lat],[Long],[Radius],(CMD1 Index),(CMD2 Index)
 
 #### Usage:
-W1,7,43.627,122.891,40;
-W1,,28.140,78.329,60,1,3; // Append to end of sequence and set commands
+
+- W1,7,43.627,122.891,40;
+- W1,,28.140,78.329,60,1,3; // Append to end of sequence and set commands
 
 ---
 
