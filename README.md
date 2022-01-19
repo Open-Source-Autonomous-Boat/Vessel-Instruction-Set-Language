@@ -26,7 +26,6 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | [C1](#c1) | Set navigation mode |
 | **W Instructions** |  |
 | [W1](#w1) | Set waypoint |
-| [W2](#w2) | Modify waypoint |
 | **D Instructions** |  |
 | **U Instructions** |  |
 | **Other Instructions** |  |
@@ -56,22 +55,23 @@ C1,2;
 Set waypoint
 
 #### Parameters:
-[Lat],[Long],(Waypoint Number \*Apend to end of sequence)
+(Waypoint Number \*Append to end of sequence),[Lat],[Long],[Radius],(CMD1 Index),(CMD2 Index)
 
 #### Usage:
-W1,43.627,22.891,6;
+W1,7,43.627,122.891,40;
+W1,,28.140,78.329,60,1,3; // Append to end of sequence and set commands
 
 ---
 
 ### W2
 
-Modify waypoint
+Foo
 
 #### Parameters:
-[Lat],[Long],(Waypoint Number)
+[foo],[foo],(foo)
 
 #### Usage:
-W1,43.627,22.891,6;
+W1,foo,foo,foo;
 
 
 ## D Instrusctions
