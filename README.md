@@ -28,6 +28,8 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | [W1](#w1) | Set waypoint |
 | [W2](#w2) | Remove waypoint |
 | **D Instructions** |  |
+| [D1](#d1) | Set command preset |
+| [D2](#d2) | Remove command preset |
 | **U Instructions** |  |
 | **Other Instructions** |  |
 | Foo | Foo |
@@ -45,7 +47,7 @@ Set navigation mode
 [Mode Number]
 
 #### Usage:
-C1,2;
+`C1,2;`
 
 
 ## W Instructions
@@ -60,8 +62,8 @@ Set waypoint
 
 #### Usage:
 
-- W1,7,43.627,122.891,40;
-- W1,,28.140,78.329,60,1,3; // Append to end of sequence and set commands
+- `W1,7,43.627,122.891,40;`
+- `W1,,28.140,78.329,60,1,3;` // Append to end of sequence and set commands
 
 ---
 
@@ -73,10 +75,35 @@ Remove waypoint
 [index]
 
 #### Usage:
-W2,6;
+
+`W2,6;`
 
 
 ## D Instrusctions
+
+### D1
+
+Set command preset
+
+#### Parameters:
+[Command Index],[Instruction],(Param 1),(Param 2),(Param 3),(Param ...)
+
+#### Usage:
+
+`D1,3,W1,7,43.627,122.891,40;`
+
+---
+
+### D2
+
+Remove command preset
+
+#### Parameters:
+[Command Index]
+
+#### Usage:
+
+`D2,6;`
 
 
 ## U Instrusctions
