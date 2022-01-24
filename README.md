@@ -86,11 +86,12 @@ Remove waypoint
 Set command preset
 
 #### Parameters:
-[Command Index],[Instruction],(Param 1),(Param 2),(Param 3),(Param ...)
+[Command Index],[Command 1],(Command 2),(Command 3),(Command ...)
 
 #### Usage:
 
-`D1,3,W1,7,43.627,122.891,40;`
+`D1,3,"W1,7,43.627,122.891,40";`
+`D1,3,"W1,7,43.627,122.891,40","W2,1";` // Multable commands
 
 ---
 
