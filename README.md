@@ -12,6 +12,7 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | Letter  | Meaning |
 | :-----: | ------- |
 | [C](#c-instructions) | Direct vessel instruction such as return to home or change power mode |
+| [H](#h-instructions) | File parameters and header information |
 | [W](#w-instructions) | Waypoint instruction such as set or modify waypoint |
 | [D](#d-instructions) | Data instructions |
 | [U](#u-instructions) | Custom user defined instructions |
@@ -24,6 +25,8 @@ A custom Gcode like language for storing and transmitting instructions for the v
 | :-----: | ---------- |
 | **C Instructions** |  |
 | [C1](#c1) | Set navigation mode |
+| **H Instructions** |  |
+| [H1](#h1) | Set instuction file type |
 | **W Instructions** |  |
 | [W1](#w1) | Set waypoint |
 | [W2](#w2) | Remove waypoint |
@@ -48,6 +51,24 @@ Set navigation mode
 
 #### Usage:
 `C1,2;`
+
+
+## H Instructions
+
+### H1
+Set instuction file type
+
+#### Parameters:
+[Type Number]
+
+| Type Number | Type |
+| :-----: | ---------- |
+| 0 | Vessel mission instructions file |
+| 1 | Instructions message |
+| 2 | Data message |
+
+#### Usage:
+H1,0;
 
 
 ## W Instructions
